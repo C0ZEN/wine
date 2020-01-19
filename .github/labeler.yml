@@ -1,0 +1,3 @@
+# Add the "test" label when a test file change
+test:
+  - ./**/*.spec.ts
