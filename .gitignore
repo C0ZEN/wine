@@ -1,6 +1,35 @@
 # Created by .ignore support plugin (hsz.mobi)
 
-# Ignore thumbnails created by windows
+# Compiled output
+/dist
+/tmp
+/out-tsc
+
+# Dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.iml
+
+# Miscellanous
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
 Thumbs.db
 
 # Ignore files build by Visual Studio
