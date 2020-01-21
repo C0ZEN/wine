@@ -1,0 +1,109 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "importHelpers": true,
+    "module": "esnext",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/@types/",
+      "types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "types": [
+      "jasmine",
+      "jasminewd2",
+      "node",
+      "googlemaps"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "@angular/language-service"
+      }
+    ],
+    "paths": {
+      "@app/component": [
+        "src/app/app.component.ts"
+      ],
+      "@app/routes": [
+        "src/app/app.routes.ts"
+      ],
+      "@environment": [
+        "src/environments/environment.ts"
+      ],
+      "@animations/*": [
+        "src/app/animations/*"
+      ],
+      "@components/*": [
+        "src/app/components/*"
+      ],
+      "@enums/*": [
+        "src/app/enums/*"
+      ],
+      "@factories/*": [
+        "src/app/factories/*"
+      ],
+      "@features/*": [
+        "src/app/features/*"
+      ],
+      "@functions/*": [
+        "src/app/functions/*"
+      ],
+      "@guards/*": [
+        "src/app/guards/*"
+      ],
+      "@initializers/*": [
+        "src/app/initializers/*"
+      ],
+      "@loaders/*": [
+        "src/app/loaders/*"
+      ],
+      "@models/*": [
+        "src/app/models/*"
+      ],
+      "@pages/*": [
+        "src/app/pages/*"
+      ],
+      "@providers/*": [
+        "src/app/providers/*"
+      ],
+      "@resolvers/*": [
+        "src/app/resolvers/*"
+      ],
+      "@services/*": [
+        "src/app/services/*"
+      ],
+      "@environments/*": [
+        "src/app/environments/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "enableResourceInlining": false,
+    "skipMetadataEmit": false,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": false,
+    "strictInjectionParameters": true,
+    "generateCodeForLibraries": true,
+    "fullTemplateTypeCheck": true,
+    "trace": true,
+    "enableIvy": false
+  }
+}

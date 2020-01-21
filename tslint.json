@@ -1,0 +1,271 @@
+{
+  "rulesDirectory": [
+    "node_modules/codelyzer"
+  ],
+  "extends": [
+    "tslint:recommended",
+    "codelyzer",
+    "tslint-etc",
+    "rxjs-tslint-rules"
+  ],
+  "rules": {
+    "no-unused-variable": false,
+    "ban-types": [
+      true,
+      [
+        "String",
+        "Use string instead"
+      ]
+    ],
+    "no-angle-bracket-type-assertion": false,
+    "comment-type": ["",
+      true,
+      "singleline",
+      "doc"
+    ],
+    "comment-format": [
+      true,
+      "check-space",
+      "check-uppercase",
+      {
+        "ignore-words": [
+          "istanbul"
+        ]
+      }
+    ],
+    "align": false,
+    "no-tautology-expression": true,
+    "static-this": true,
+    "unnecessary-else": [
+      true,
+      {
+        "allow-else-if": true
+      }
+    ],
+    "no-null-undefined-union": true,
+    "component-max-inline-declarations": true,
+    "no-host-metadata-property": false,
+    "no-inputs-metadata-property": false,
+    "no-outputs-metadata-property": false,
+    "no-queries-metadata-property": true,
+    "prefer-inline-decorator": false,
+    "use-lifecycle-interface": true,
+    "component-class-suffix": [
+      true,
+      "Component"
+    ],
+    "directive-class-suffix": [
+      true,
+      "Directive"
+    ],
+    "array-type": [
+      true,
+      "array"
+    ],
+    "trailing-comma": false,
+    "no-consecutive-blank-lines": true,
+    "arrow-parens": true,
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "max-classes-per-file": [
+      true,
+      1
+    ],
+    "no-var-requires": true,
+    "object-literal-key-quotes": [
+      true,
+      "consistent-as-needed"
+    ],
+    "arrow-return-shorthand": true,
+    "callable-types": true,
+    "class-name": true,
+    "curly": true,
+    "deprecation": {
+      "severity": "warn"
+    },
+    "eofline": true,
+    "forin": true,
+    "import-blacklist": [
+      true,
+      "rxjs/Rx"
+    ],
+    "import-spacing": true,
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "interface-over-type-literal": true,
+    "label-position": true,
+    "max-line-length": [
+      true,
+      300
+    ],
+    "member-access": [
+      true,
+      "check-accessor",
+      "check-constructor"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "case-insensitive",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "protected-static-field",
+          "private-static-field",
+          "public-static-method",
+          "protected-static-method",
+          "private-static-method",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "no-arg": true,
+    "no-bitwise": true,
+    "no-console": [
+      true,
+      "debug",
+      "info",
+      "time",
+      "timeEnd",
+      "trace"
+    ],
+    "no-construct": true,
+    "no-debugger": true,
+    "no-duplicate-super": true,
+    "no-empty": false,
+    "no-empty-interface": true,
+    "no-eval": true,
+    "no-inferrable-types": true,
+    "no-misused-new": true,
+    "no-non-null-assertion": true,
+    "no-redundant-jsdoc": true,
+    "no-shadowed-variable": true,
+    "no-string-literal": false,
+    "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-trailing-whitespace": true,
+    "no-unnecessary-initializer": true,
+    "no-unused-expression": true,
+    "no-var-keyword": true,
+    "object-literal-sort-keys": [
+      true,
+      "shorthand-first"
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-catch",
+      "check-else",
+      "check-whitespace"
+    ],
+    "prefer-const": true,
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "radix": true,
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef": [
+      true,
+      "call-signature",
+      "arrow-call-signature",
+      "property-declaration",
+      "object-destructuring",
+      "array-destructuring"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "unified-signatures": true,
+    "variable-name": false,
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "no-output-on-prefix": true,
+    "no-input-rename": false,
+    "no-output-rename": false,
+    "use-pipe-transform-interface": true,
+    "no-assign-mutated-array": true,
+    "no-missing-dollar-expect": true,
+    "no-enum": false,
+    "no-unused-declaration": {
+      "options": [
+        {
+          "declarations": true,
+          "ignored": {
+            "^_": true
+          },
+          "imports": true
+        }
+      ],
+      "severity": "error"
+    },
+    // Force to use new Error object instead of raw data on error
+    "throw-error": true,
+    // Force to add $ at the end of RxJS observables
+    "rxjs-finnish": true,
+    // Do not allow rxjs observables that depends on rxjs compat
+    "rxjs-no-compat": true,
+    // Force to create observables with "new Observable" syntax when possible
+    "rxjs-no-create": true,
+    // Force to use private accessors when using subjects
+    // The subjects must be exposed via public methods
+    // This is better to maintain the code and to plug events on the stream at anytime
+    "rxjs-no-exposed-subjects": true,
+    // Do not allow to subscribe without next handler or error handler
+    "rxjs-no-ignored-subscribe": false,
+    // Do not allow to unsubscribe
+    "rxjs-no-subject-unsubscribe": true,
+    // Do not allow to access the value of BehaviorSubject
+    "rxjs-no-subject-value": true,
+    // Do not allow operators after takeUntil which is not safe
+    "rxjs-no-unsafe-takeuntil": true,
+    // There is no need to set the types when TypeScript can do it for us
+    "rxjs-no-explicit-generics": true,
+    // There is no point in such thing because any asynchronous code should be added inside the stream
+    "rxjs-no-async-subscribe": true,
+    // We should never forget to unsubscribe for performances reasons
+    // This rule is for now disable because it is too much annoying for now
+    // Example: will lint error on subscribe inside the tests
+    "rxjs-no-ignored-subscription": false,
+    "rxjs-throw-error": true,
+    "rxjs-no-index": true,
+    "rxjs-no-redundant-notify": true
+  }
+}

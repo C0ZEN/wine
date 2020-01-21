@@ -1,0 +1,6 @@
+@import 'imports';
+
+@include mat-core($ptl-typography);
+@include angular-material-theme($ptl-theme);
+@include mat-base-typography($ptl-typography);
+@include angular-material-typography($ptl-typography);

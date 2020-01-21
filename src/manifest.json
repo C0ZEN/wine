@@ -1,0 +1,59 @@
+{
+  "name": "Wine handler",
+  "short_name": "Wine handler",
+  "theme_color": "#B71540",
+  "background_color": "#FFFFFF",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "https://localhost:8888",
+  "lang": "fr",
+  "orientation": "portrait",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "dir": "ltr",
+  "description": "Les maîtres d'œuvre nouvelle génération",
+  "icons": [
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=36&height=36",
+      "sizes": "36x36",
+      "type": "image/png",
+      "density": "0.75"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=48&height=48",
+      "sizes": "48x48",
+      "type": "image/png",
+      "density": "1.0"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=72&height=72",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": "1.5"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=96&height=96",
+      "sizes": "96x96",
+      "type": "image/png",
+      "density": "2.0"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=144&height=144",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": "3.0"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=192&height=192",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0"
+    },
+    {
+      "src": "assets/images/android/splashscreens/splash.png?width=512&height=512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "5.0"
+    }
+  ]
+}

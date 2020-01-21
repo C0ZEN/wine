@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta content="width=device-width, initial-scale=1"
+          name="viewport">
+    <link crossorigin="use-credentials"
+          href="manifest.json"
+          rel="manifest">
+    <meta content="IE=edge,chrome=1"
+          http-equiv="X-UA-Compatible"/>
+
+    <!-- App title -->
+    <title>Wine handler</title>
+
+    <!-- Allow the web-page and content to be served from cache even if the case is stale (old) provided that the web-page hasn't changed -->
+    <!-- It can speed the loading a lot -->
+    <!-- The rem attribute is a 'remark' to help to remind that the cache has 30 minutes max age -->
+    <meta content="public,max-age=1800,max-stale,stale-while-revalidate=86400,stale-if-error=259200"
+          http-equiv="Cache-Control"
+          rem="max-age=30minutes">
+
+    <!-- Author -->
+    <meta content="C0ZEN"
+          property="author"/>
+
+    <!-- iOS app title -->
+    <meta content="Wine handler"
+          name="apple-mobile-web-app-title">
+
+    <!-- Windows Tile app title -->
+    <meta content="Wine handler"
+          name="application-name">
+
+    <!-- Search bar background-color for Chrome, Firefox OS and Opera -->
+    <meta content="#B71540"
+          name="theme-color">
+
+    <!-- Search bar background-color for Windows phones -->
+    <meta content="#B71540"
+          name="msapplication-navbutton-color">
+
+    <!-- Background color of the Windows Tile -->
+    <meta content="#FFFFFF"
+          name="msapplication-TileColor">
+
+    <!-- https://medium.com/appscope/changing-the-ios-status-bar-of-your-progressive-web-app-9fc8fbe8e6ab -->
+    <!-- iOS specific color of the search bar -->
+    <meta content="default"
+          name="apple-mobile-web-app-status-bar-style">
+
+    <!-- Allow an iOS app to be a webapp -->
+    <!-- This enabled the standalone mod to hide browser content -->
+    <meta content="yes"
+          name="apple-mobile-web-app-capable">
+
+    <!-- Allow an Chrome app to be a webapp -->
+    <!-- This enabled the standalone mod to hide browser content -->
+    <meta content="yes"
+          name="mobile-web-app-capable">
+
+    <!-- Family safe -->
+    <meta content="all"
+          name="target">
+    <meta content="all"
+          name="audience">
+    <meta content="Worldwide"
+          name="coverage">
+    <meta content="Global"
+          name="distribution">
+    <meta content="general"
+          name="rating">
+
+    <!-- Smooth fade-in and mobile-friendly -->
+    <meta content="True"
+          name="HandheldFriendly">
+    <meta content="no"
+          name="MSThemeCompatible">
+    <meta content="true"
+          name="mssmarttagspreventparsing">
+    <meta content="RevealTrans(Duration=1.0,Transition=1)"
+          http-equiv="Page-Enter">
+    <meta content="RevealTrans(Duration=1.0,Transition=1)"
+          http-equiv="Page-Exit">
+
+    <!-- iOS splash screen icons -->
+    <link href="/assets/images/ios/splashscreens/iphone5_splash.png"
+          media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/iphone6_splash.png"
+          media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/iphoneplus_splash.png"
+          media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/iphonex_splash.png"
+          media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/iphonexr_splash.png"
+          media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/iphonexsmax_splash.png"
+          media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/ipad_splash.png"
+          media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/ipadpro1_splash.png"
+          media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/ipadpro3_splash.png"
+          media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+    <link href="/assets/images/ios/splashscreens/ipadpro2_splash.png"
+          media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+          rel="apple-touch-startup-image"/>
+
+    <!-- Favicons -->
+    <link href="/assets/images/favicon/favicon.ico"
+          rel="shortcut icon"
+          type="image/x-icon"/>
+    <link href="/assets/images/favicon/favicon.png?width=16&height=16"
+          rel="icon"
+          type="image/png">
+    <link href="/assets/images/favicon/favicon.png?width=16&height=16"
+          rel="icon"
+          sizes="16x16"
+          type="image/png">
+    <link href="/assets/images/favicon/favicon.png?width=32&height=32"
+          rel="icon"
+          sizes="32x32"
+          type="image/png">
+    <link href="/assets/images/favicon/favicon.png?width=64&height=64"
+          rel="icon"
+          sizes="64x64"
+          type="image/png">
+    <link href="/assets/images/favicon/favicon.png?width=96&height=96"
+          rel="icon"
+          sizes="96x96"
+          type="image/png">
+
+    <!-- iOS app icons -->
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=40&height=40"
+          rel="apple-touch-icon"
+          sizes="40x40">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=57&height=57"
+          rel="apple-touch-icon"
+          sizes="57x57">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=58&height=58"
+          rel="apple-touch-icon"
+          sizes="58x58">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=60&height=60"
+          rel="apple-touch-icon"
+          sizes="60x60">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=72&height=72"
+          rel="apple-touch-icon"
+          sizes="72x72">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=76&height=76"
+          rel="apple-touch-icon"
+          sizes="76x76">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=80&height=80"
+          rel="apple-touch-icon"
+          sizes="80x80">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=114&height=114"
+          rel="apple-touch-icon"
+          sizes="114x114">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=120&height=120"
+          rel="apple-touch-icon"
+          sizes="120x120">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=144&height=144"
+          rel="apple-touch-icon"
+          sizes="144x144">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=152&height=152"
+          rel="apple-touch-icon"
+          sizes="152x152">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=167&height=167"
+          rel="apple-touch-icon"
+          sizes="167x167">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=180&height=180"
+          rel="apple-touch-icon"
+          sizes="180x180">
+    <link href="/assets/images/ios/app-icons/apple-icon.png?width=1024&height=1024"
+          rel="apple-touch-icon"
+          sizes="1024x1024">
+
+    <!-- Icon for Windows Tile -->
+    <!-- Should be transparent -->
+    <!-- Can be test here: http://www.buildmypinnedsite.com/ -->
+    <meta content="/assets/images/windows/tiles/ms-icon.png?width=70&height=70"
+          name="msapplication-square70x70logo">
+    <meta content="/assets/images/windows/tiles/ms-icon.png?width=150&height=150"
+          name="msapplication-square150x150logo">
+    <meta content="/assets/images/windows/tiles/ms-icon.png?width=310&height=150"
+          name="msapplication-wide310x150logo">
+    <meta content="/assets/images/windows/tiles/ms-icon.png?width=310&height=310"
+          name="msapplication-square310x310logo">
+
+    <!-- Async CSS files -->
+    <link as="style"
+          href="lazy-styles.css"
+          onerror="this.rel='stylesheet'"
+          onload="this.onload=null;this.rel='stylesheet'"
+          rel="preload">
+  </head>
+  <body>
+    <cptl-root></cptl-root>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+  </body>
+</html>

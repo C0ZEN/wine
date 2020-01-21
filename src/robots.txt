@@ -1,0 +1,4 @@
+User-agent: *
+
+# Block everything by default
+Disallow: /

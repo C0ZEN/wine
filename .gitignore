@@ -53,3 +53,6 @@ Thumbs.db
 *.dll
 *.lib
 *.sbr
+
+# I18n generated files
+/src/assets/i18n-cache-busting.json

@@ -1,0 +1,6 @@
+User-agent: *
+
+# Block everything by default
+Disallow: /
+
+Sitemap: https://travaux.dev-homegenius.fr/sitemap-h.html

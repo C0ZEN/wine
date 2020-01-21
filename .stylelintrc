@@ -1,0 +1,85 @@
+{
+  "extends": [
+    "stylelint-config-standard"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignore": [
+          "custom-elements"
+        ]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": [
+          "cue"
+        ]
+      }
+    ],
+    "block-no-empty": null,
+    "no-descending-specificity": null,
+    "declaration-colon-space-before": "never",
+    "no-empty-source": null,
+    "color-hex-case": "upper",
+    "color-hex-length": "long",
+    "indentation": 2,
+    "string-quotes": "single",
+    "selector-attribute-quotes": "never",
+    "function-url-quotes": null,
+    "font-family-name-quotes": "always-unless-keyword",
+    "at-rule-no-vendor-prefix": null,
+    "at-rule-no-unknown": null,
+    "media-feature-name-no-vendor-prefix": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "max-nesting-depth": 9,
+    "selector-max-compound-selectors": null,
+    "color-named": "never",
+    "color-no-hex": null,
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "inside-block",
+          "blockless-after-same-name-blockless"
+        ]
+      }
+    ],
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": [
+          "if"
+        ]
+      }
+    ],
+    "scss/at-else-empty-line-before": "never",
+    "scss/at-function-named-arguments": null,
+    "scss/at-function-parentheses-space-before": "never",
+    "scss/at-if-closing-brace-newline-after": "always-last-in-chain",
+    "scss/at-if-closing-brace-space-after": "always-intermediate",
+    "scss/at-mixin-argumentless-call-parentheses": "always",
+    "scss/at-mixin-named-arguments": null,
+    "scss/at-mixin-parentheses-space-before": "never",
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/double-slash-comment-empty-line-before": "always",
+    "scss/double-slash-comment-inline": "never",
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/declaration-nested-properties": "never",
+    "scss/at-each-key-value-single-line": true,
+    "scss/function-quote-no-quoted-strings-inside": true,
+    "scss/selector-no-union-class-name": true,
+    "scss/function-color-relative": null,
+    "scss/comment-no-loud": true,
+    "scss/map-keys-quotes": "always",
+    "scss/no-duplicate-mixins": true
+  }
+}

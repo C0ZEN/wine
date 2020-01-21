@@ -1,0 +1,305 @@
+{
+  "title": "Home Genius - Customer Portal",
+  "headers": {
+    "header": {
+      "renovationPrice": "Prix total du projet",
+      "includedTaxes": "TTC"
+    },
+    "room": {
+      "header": {
+        "area": "Superficie : {{ area }}m²",
+        "totalPrice": "Total pièce : {{ totalPrice }}"
+      },
+      "addTask": "Ajouter une prestation"
+    }
+  },
+  "actionBar": {
+    "save": {
+      "button": {
+        "label": "Sauvegarder et reçevoir par mail"
+      },
+      "success": {
+        "title": "Votre estimation a été envoyé par mail"
+      },
+      "error": {
+        "title": "Votre estimation n'a pas pu être envoyé par mail"
+      }
+    },
+    "add": {
+      "buttonLabel": "Sauvegarder le projet",
+      "success": {
+        "title": "Le projet a été sauvegardé"
+      },
+      "error": {
+        "title": "La sauvegarde du projet a échoué"
+      }
+    }
+  },
+  "room": {
+    "edit": {
+      "first": {
+        "template": "Choisissez un type de projet à personnaliser",
+        "submitButton": {
+          "label": "Ajouter cette pièce"
+        },
+        "templateSelected": "Prestations préremplies et modifiables :",
+        "noTemplateSelected": " Aucune prestation de pré-remplie",
+        "addRoom": "Ajouter une pièce"
+      },
+      "edit": "Modifier une pièce",
+      "submitButton": {
+        "label": "Valider les modifications"
+      },
+      "area": {
+        "label": "Superficie de la pièce (en m²)"
+      },
+      "name": {
+        "label": "Nom de la pièce ({{ roomName }})",
+        "placeholder": "Saisissez le nom de la pièce"
+      },
+      "toasts": {
+        "success": {
+          "message": "Pièce sauvegardée"
+        }
+      }
+    },
+    "select": {
+      "title": "Quelle pièce souhaitez-vous transformer ?"
+    },
+    "toasts": {
+      "success": {
+        "added": "Nouvelle pièce ajoutée"
+      }
+    },
+    "remove": {
+      "message": "Êtes-vous sûr de vouloir supprimer la pièce <span class=ptl-color-error>{{ roomName }}</span> ?<br>Cette action est irréversible.",
+      "cancelButton": {
+        "label": "Annuler"
+      },
+      "submitButton": {
+        "label": "Supprimer la pièce"
+      }
+    },
+    "menu": {
+      "sendMail": {
+        "label": "Reçevoir l'estimation par mail"
+      },
+      "addTasks": {
+        "label": "Ajouter des prestations"
+      },
+      "removeTasks": {
+        "label": "Supprimer des prestations"
+      },
+      "removeRoom": {
+        "label": "Supprimer la pièce"
+      },
+      "editRoom": {
+        "label": "Modifier la pièce"
+      }
+    }
+  },
+  "task": {
+    "select": {
+      "title": "Quelle type de prestation souhaitez-vous ajouter ?"
+    },
+    "add": {
+      "submitButton": {
+        "label": {
+          "one": "Ajouter une prestation",
+          "multiple": "Ajouter des prestations"
+        }
+      }
+    },
+    "toasts": {
+      "success": {
+        "added": "{ quantity, plural, one { Nouvelle prestation ajoutée } other { # nouvelles prestations ajoutées } }"
+      }
+    },
+    "create": {
+      "title": "Créer une prestation",
+      "name": "Nom de la prestation",
+      "description": "Description de la prestation",
+      "submitButton": {
+        "label": "Créer une prestation"
+      }
+    },
+    "edit": {
+      "title": "Modifier la prestation",
+      "name": "Nom de la prestation",
+      "description": "Description de la prestation",
+      "submitButton": {
+        "label": "Modifier la prestation"
+      }
+    }
+  },
+  "subtask": {
+    "title": "Options de la prestation",
+    "empty": {
+      "text": "Aucune prestation disponible"
+    }
+  },
+  "product": {
+    "relatedProduct": "Produit associé",
+    "submitButton": {
+      "label": "Valider ce produit"
+    },
+    "baseProduct": "Produit de base",
+    "leroyMerlinProduct": "Produit Leroy Merlin",
+    "otherProduct": "Autre produit",
+    "customProduct": "J'ai déjà mon produit",
+    "productName": "Nom du produit",
+    "productNamePlaceholder": "Ex : Carrelage sol gris",
+    "productReference": "Référence du produit",
+    "productReferencePlaceholder": "Ex : F0394858K",
+    "productPrice": "Prix {{ unit }} du produit (TVA à {{ productVat }})",
+    "productPricePlaceholder": "Ex : 284",
+    "productStoreName": "Nom de l'enseigne",
+    "productStoreNamePlaceholder": "Enseigne",
+    "productReferenceOrQuote": "Référence du produit ou du devis",
+    "productReferenceOrQuotePlaceholder": "Référence"
+  },
+  "renovation": {
+    "dialogs": {
+      "appointment": {
+        "message": "Les modifications ont été sauvegardées et envoyées sur votre adresse mail",
+        "subMessage": "Pour continuer à affiner votre projet, faites vous aider par téléphone avec un expert !",
+        "submitButton": {
+          "label": "RDV au téléphone"
+        },
+        "continueButton": {
+          "label": "Continuer l'estimation"
+        }
+      },
+      "appointmentBait": {
+        "title": "Préparez-vous à passer à l’action !",
+        "description": "Échangez avec nous par téléphone pour planifier un rendez vous à domicile, afin d’avoir un devis",
+        "appointmentButton": "RDV avec un expert",
+        "continueButton": "Continuer l'estimation"
+      },
+      "save": {
+        "message": "Nous allons envoyer votre estimation à cette adresse mail",
+        "email": {
+          "label": "Adresse mail",
+          "placeholder": "Saisissez votre adresse mail"
+        },
+        "submitButton": {
+          "label": "Recevoir l'estimation par mail"
+        }
+      },
+      "firstSave": {
+        "message": "Afin de créer votre projet, veuillez saisir vos informations.",
+        "email": {
+          "label": "Adresse mail",
+          "placeholder": "Saisissez votre adresse mail"
+        },
+        "phone": {
+          "label": "Téléphone",
+          "placeholder": "Saisissez votre téléphone"
+        },
+        "rgpd": {
+          "hint": "Vos données personnelles seront uniquement utilisées dans le cadre de notre service.",
+          "checkButton": {
+            "label": "J'accepte les",
+            "link": "conditions générales d'utilisation"
+          }
+        },
+        "submitButton": {
+          "label": "Démarrer l'estimation"
+        }
+      },
+      "room": {
+        "task": {
+          "removeTasks": {
+            "messages": {
+              "multiple": "Êtes-vous sûr de vouloir supprimer <strong class=ptl-color-error>{{ quantity }}</strong> { quantity, plural, one { prestation } other { prestations } } ?<br>Cette action est irréversible.",
+              "all": "Êtes-vous sûr de vouloir supprimer <strong class=ptl-color-error>toutes ({{ quantity }})</strong> les prestations ?<br>Cette action est irréversible."
+            },
+            "cancelButton": {
+              "label": "Annuler"
+            },
+            "submitButton": {
+              "label": {
+                "multiple": "Supprimer { quantity, plural, one { la prestation } other { les prestations } }"
+              }
+            }
+          }
+        }
+      }
+    },
+    "room": {
+      "task": {
+        "removeBarLabel": {
+          "multiple": "{ quantity, plural, =0 { Aucune prestation selectionnée } one { <strong>#</strong> prestation selectionnée } other { <strong>#</strong> prestations selectionnées } }",
+          "all": "<strong>Toutes ({{ quantity }})</strong> les prestations selectionnées"
+        },
+        "removeTasksSuccessToast": {
+          "message": {
+            "multiple": "{ quantity, plural, one { <strong>1</strong> prestation supprimée } other { <strong>{{ quantity }}</strong> prestations supprimées } }",
+            "all": "<strong>Toutes ({{ quantity }})</strong> les prestations ont été supprimées"
+          }
+        }
+      }
+    }
+  },
+  "appointment": {
+    "title": "Homegenius - Prenez rendez-vous",
+    "toasts": {
+      "success": {
+        "confirmed": "Votre rendez-vous a été confirmé"
+      }
+    }
+  },
+  "pageNotFound": {
+    "title": "Oups, cette page n'existe pas !",
+    "description": "Nous n'avons pas trouvé la page que vous cherchiez.<br>N'hésitez pas à consulter notre FAQ.<br>Vous y trouverez peut-être ce que vous cherchez.",
+    "submit": "Retour à l'accueil"
+  },
+  "renovationPriceEstimationMethod": {
+    "title": {
+      "label": "Construire et chiffrer mon projet"
+    },
+    "homemade": {
+      "label": "Préparer et estimer mon projet en ligne",
+      "text": "Accédez à notre outil de chiffrage en ligne GeniusApp.<br>Nos prix sont tout compris : maitrise d’œuvre, produit et main d’œuvre."
+    },
+    "manager": {
+      "label": "Co-construire avec un expert travaux et obtenir un devis officiel",
+      "text": "Nous vous proposons un entretien téléphonique afin de partager votre projet et organiser une visite sur place avec un pilote HomeGenius.",
+      "priceInput": {
+        "label": "Votre budget"
+      }
+    },
+    "submitButton": {
+      "label": "Suivant"
+    }
+  },
+  "renovationPriceTooLow": {
+    "title": {
+      "label": "Désolé, HomeGenius est une solution gros chantiers spécialisée sur les travaux de 5 000 € à 150 000 € avec maitrise d’œuvre.<br>Voici notre bon conseil pour votre projet."
+    },
+    "backButton": {
+      "label": "Précédent"
+    },
+    "leroyMerlinButton": {
+      "label": "Aller sur leroymerlin.fr"
+    }
+  },
+  "error": {
+    "login": {
+      "accessDenied": {
+        "title": "Accès réservé aux utilisateurs HomeGenius"
+      }
+    },
+    "unavailable": {
+      "title": "Service indisponible",
+      "description": "Veuillez réessayer plus tard."
+    },
+    "unknown": {
+      "title": "Une erreur inconnue est survenue"
+    },
+    "unknownToast": {
+      "title": "Oups",
+      "description": "Une erreur inconnue est survenue"
+    }
+  }
+}

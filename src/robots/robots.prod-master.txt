@@ -1,0 +1,53 @@
+User-agent: *
+
+# Block everything by default
+Disallow: /
+
+# Home page
+Allow: /$
+
+# Professional page
+Allow: /professional$
+Allow: /professional/
+
+# Site map page
+Allow: /sitemap-h.html$
+
+# Old SEO pages
+Allow: /devis-renovation/
+
+# New SEO pages
+Allow: /travaux/
+Allow: /app/home$
+Allow: /app/home/
+
+# Pages
+Allow: /app/appointment$
+Allow: /app/appointment/
+Allow: /app/onboarding$
+Allow: /app/onboarding/
+
+# Assets
+Allow: /assets/
+Allow: /app/assets/
+Allow: /extassets/
+
+# Files
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.html$
+Allow: /*.json$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.eot$
+Allow: /*.ttf$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.mp4$
+Allow: /*.ogv$
+Allow: /*.vtt$
+Allow: /*.pdf$
+
+Sitemap: https://travaux.leroymerlin.fr/sitemap-h.html
