@@ -65,7 +65,7 @@
                 },
                 {
                   "replace": "src/robots.txt",
-                  "with": "src/seo/robots/robots.prod-master.txt"
+                  "with": "src/robots/robots.prod-master.txt"
                 }
               ],
               "optimization": true,
@@ -105,7 +105,7 @@
                 },
                 {
                   "replace": "src/robots.txt",
-                  "with": "src/seo/robots/robots.prod-develop.txt"
+                  "with": "src/robots/robots.prod-develop.txt"
                 }
               ],
               "optimization": true,
@@ -132,7 +132,7 @@
               "progress": true,
               "extractLicenses": true,
               "verbose": false,
-              "index": "src/index-pages/prod-develop/index.html"
+              "index": "src/index/prod-develop/index.html"
             },
             "prod-master": {
               "fileReplacements": [
@@ -146,7 +146,7 @@
                 },
                 {
                   "replace": "src/robots.txt",
-                  "with": "src/seo/robots/robots.prod-master.txt"
+                  "with": "src/robots/robots.prod-master.txt"
                 }
               ],
               "optimization": true,
@@ -173,7 +173,7 @@
               "progress": true,
               "extractLicenses": true,
               "verbose": false,
-              "index": "src/index-pages/prod-master/index.html"
+              "index": "src/index/prod-master/index.html"
             }
           }
         },
@@ -263,7 +263,7 @@
                 },
                 {
                   "replace": "src/robots.txt",
-                  "with": "src/seo/robots/robots.prod-develop.txt"
+                  "with": "src/robots/robots.prod-develop.txt"
                 }
               ],
               "bundleDependencies": "all",
@@ -285,7 +285,7 @@
                 },
                 {
                   "replace": "src/robots.txt",
-                  "with": "src/seo/robots/robots.prod-master.txt"
+                  "with": "src/robots/robots.prod-master.txt"
                 }
               ],
               "bundleDependencies": "all",
