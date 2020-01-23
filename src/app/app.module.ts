@@ -12,11 +12,9 @@ import { RouterModule } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { AppComponent } from '@app/component';
 import { APP_ROUTES } from '@app/routes';
+import { CloudinaryModule } from '@cloudinary/angular-5.x';
 import { AkitaNgDevtools } from '@datorama/akita-ngdevtools';
 import { ENVIRONMENT } from '@environment';
-import { DialogsModule } from '@features/dialogs/dialogs.module';
-import { GLOBAL_ERROR_HANDLER_PROVIDER } from '@features/errors/providers/global-error-handler.provider';
-import { TranslocoHttpLoader } from '@loaders/translation/transloco-http-loader';
 import { TranslocoModule } from '@ngneat/transloco';
 import { TranslocoMessageFormatModule } from '@ngneat/transloco-messageformat';
 import {
@@ -29,55 +27,9 @@ import {
 } from '@ngneat/transloco-persist-translations';
 import { TransferHttpCacheModule } from '@nguniversal/common';
 import { StorageModule } from '@ngx-pwa/local-storage';
-import { PagesModule } from '@pages/pages.module';
-import { API_CONSTANTS_PROVIDER } from '@providers/api-constants.provider';
-import { ENVIRONMENT_INIT_PROVIDER } from '@providers/environment-init.provider';
-import { REQUEST_INTERCEPTOR_PROVIDER } from '@providers/http-interceptors.provider';
-import { PTL_MATERIAL_ICON_CONFIG_PROVIDER } from '@providers/ptl-material-icon-config.provider';
-import { TRANSLATION_SERVICE_PROVIDER } from '@providers/translation/translation-service.provider';
-import { TRANSLOCO_CONFIG_PROVIDER } from '@providers/translation/transloco-config.provider';
 import { InViewportModule } from '@thisissoon/angular-inviewport';
+import { Cloudinary } from 'cloudinary-core';
 import localForage from 'localforage';
-import {
-  PTL_DATA_TYPE_LOGO_HOME_GENIUS_INIT_PROVIDER,
-  PTL_HUB_SPOT_INIT_PROVIDER,
-  PTL_META_DATA_ROBOTS_INIT_PROVIDER,
-  PTL_ONE_HOUR,
-  PtlAuthenticationModule,
-  PtlCanonicalModule,
-  PtlCategoriesModule,
-  PtlCustomerModule,
-  PtlDataTypeModule,
-  PtlDateModule,
-  PtlDialogModule,
-  PtlFacebookModule,
-  PtlGclIdModule,
-  PtlGoogleAnalyticsModule,
-  PtlGooglePlacesModule,
-  PtlGoogleReverseGeocodingModule,
-  PtlGoogleServicesModule,
-  PtlHotjarModule,
-  PtlHubSpotModule,
-  PtlImagesModule,
-  PtlLoadingBarModule,
-  PtlLoadingStateModule,
-  PtlLocationValidityModule,
-  PtlOnboardingModule,
-  PtlPortalModule,
-  PtlProductsModule,
-  PtlReferrerModule,
-  PtlRenovationsModule,
-  PtlRgpdModule,
-  PtlRoomsModule,
-  PtlScrollModule,
-  PtlTasksModule,
-  PtlTemplatesModule
-} from 'ng-homegenius-portal';
-import {
-  LoggerModule,
-  NgxLoggerLevel
-} from 'ngx-logger';
-import { ToastrModule } from 'ngx-toastr';
 
 // Angular i18n
 registerLocaleData(localeFr, 'fr', localeFrExtra);
@@ -127,18 +79,8 @@ const langLocalForage: LocalForage = localForage.createInstance({
     }),
     TransferHttpCacheModule,
     ENVIRONMENT.production ? [] : AkitaNgDevtools.forRoot(),
-    ToastrModule.forRoot({
-      closeButton: true,
-      enableHtml: true,
-      preventDuplicates: true,
-      progressBar: true
-    }),
     ServiceWorkerModule.register('./ngsw-worker.js', {
       enabled: ENVIRONMENT.production
-    }),
-    LoggerModule.forRoot({
-      disableConsoleLogging: false,
-      level: NgxLoggerLevel.TRACE
     }),
     StorageModule.forRoot({
       IDBDBName: 'app_storage',
@@ -166,16 +108,10 @@ const langLocalForage: LocalForage = localForage.createInstance({
       locales: 'fr-FR'
     }),
     InViewportModule,
-    DialogsModule,
-    PagesModule
-  ],
-  providers: [
-    GLOBAL_ERROR_HANDLER_PROVIDER,
-    ENVIRONMENT_INIT_PROVIDER,
-    REQUEST_INTERCEPTOR_PROVIDER,
-    TRANSLATION_SERVICE_PROVIDER,
-    API_CONSTANTS_PROVIDER,
-    TRANSLOCO_CONFIG_PROVIDER
+    CloudinaryModule.forRoot(Cloudinary, {
+      cloud_name: 'cozen',
+      secure: true
+    }),
   ]
 })
 export class AppModule {
